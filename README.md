@@ -103,14 +103,14 @@ int main(void)
 
 ### Main Functions
 - `get_next_line()` - Reads and returns the next line from a file descriptor
-- `read_and_add()` - Reads from fd and adds to stock
-- `extract_from_stock()` - Extracts a line from the stock
-- `clean_extracted_stock()` - Cleans the stock after extraction
+- `read_and_add()` - Reads data from file descriptor and appends it to the stock buffer
+- `extract_from_stock()` - Extracts one line (up to '\n' or EOF) from the stock buffer
+- `clean_extracted_stock()` - Removes the extracted line from stock and returns the remaining content
 
 ### Utility Functions
-- `ft_strlen()` - Calculates string length
-- `ft_strchr()` - Finds character in string
-- `add_to_stock()` - Adds buffer to stock
+- `ft_strlen()` - Calculates the length of a string
+- `ft_strchr()` - Searches for a character in a string
+- `add_to_stock()` - Concatenates buffer to stock and returns the new combined string
 
 ## 🧪 Testing
 
